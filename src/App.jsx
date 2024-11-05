@@ -87,7 +87,7 @@ gap: 30px;
         display: flex;
         align-items: center;
         width: 100%;
-        height: 7vh;
+        height: 65px;
         margin-left: 20px;
         padding-left: 35px;
         border-radius: 30px;
@@ -110,60 +110,25 @@ gap: 30px;
 }
 `
 const Firstcontent = styled.div`
+      width: 70vw;
 display: flex;
 position: relative;
+/* justify-content: center; */
 align-items: center;
   > div:nth-child(1) {
     position: relative;
-    margin-right: 100px;
-    margin-left: 100px;
-  }
-  >div:nth-child(2){
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    >img{
-      vertical-align: baseline;
-    }
-    >img:nth-child(1){
-      position: absolute;
-      left: 145px;
-      top: 0px;
-      opacity: 0;
-      z-index: 3;
-    }
-    >img:nth-child(2){
-      position: absolute;
-      left: 325px;
-      top: 260px;
-      opacity: 0;
-      z-index: 1;
-    }
-    >img:nth-child(3){
-      position: absolute;
-      z-index: 3;
-      left: 110px;
-      top: 270px;
-      opacity: 0;
-    }
-    >img:nth-child(1):hover{
-      opacity: 1;
-    }
-    >img:nth-child(2):hover{
-      opacity: 1;
-    }
-    >img:nth-child(3):hover{
-      opacity: 1;
-    }
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
 `
 const Thirdcontent = styled.div`
+      width: 70vw;
   > div{
     display: flex;  
     flex-direction: column;
     align-items: center;
     >div:nth-child(1){
-      width: 70vw;
+      width: 100%;
       align-items: end;
       display: flex;
       justify-content: space-around;
@@ -181,8 +146,15 @@ const Thirdcontent = styled.div`
       border-radius: 20px;
       width: 90%;
       display: flex;
-      > div {
+      > div:nth-child(2) {
+        width: 100%;
         display: flex;
+        justify-content: space-around;
+        >div{
+          display: flex;
+          flex-direction: column;
+          /* justify-content: space-between; */
+        }
         img{
           width: 14vw;
           height: 45vh;
@@ -191,8 +163,9 @@ const Thirdcontent = styled.div`
           font-size: 20px;
           font-weight: bold;
           width: 19vw;
-          margin-left: 50px;
-          margin-bottom: 20px;
+          /* margin-left: 20px; */
+          
+          margin-bottom: 5%;
         }
       }
     }
@@ -274,6 +247,7 @@ const Thirdcontentarr = [
 ]
 
 const Secondcontent = styled.div`
+      width: 70vw;
   display: flex;
   flex-direction: column;
   >div:nth-child(1){
@@ -518,8 +492,10 @@ align-items: center;
               <Box box_left="100px" box_top="650px" box_position="row-reverse" box_text="순천 동천하구" onClick={() => FirstcontentsEvent('쌍호')} />
             </div>
             <div>
+              <div>
               </div>
-            <First title={FirstcontentsArr.title} location={FirstcontentsArr.location} infor={FirstcontentsArr.infor} src={FirstcontentsArr.src}/>
+              <First title={FirstcontentsArr.title} location={FirstcontentsArr.location} infor={FirstcontentsArr.infor} src={FirstcontentsArr.src}/>
+            </div>
           </Firstcontent>
         ) : null}
         {clickedIndex === 1 ? (

@@ -2,12 +2,13 @@ import styled from "styled-components"
 
 
 const Contents = styled.div`
-width: 28vw;
-height: 75vh;
+width: fit-content;
+height: fit-content;
 display: flex;
 background-color: white;
 border-radius: 30px;
 align-items: center;
+justify-content: center;
 flex-direction: column;
 > div {
   padding-top: 25px;
