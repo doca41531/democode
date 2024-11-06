@@ -485,7 +485,7 @@ align-items: center;
               <Box box_left="330px" box_top="500px" box_position="row" box_text="대구달성하천습지" onClick={() => FirstcontentsEvent('가평리습지')} />
               <Box box_left="450px" box_top="540px" box_position="row" box_text="화염늪" onClick={() => FirstcontentsEvent('쌍호')} />
                 
-              <Box box_left="350px" box_top="250px" box_position="row" box_text="월영 한반도 습지" onClick={() => FirstcontentsEvent('월영한반도습지')} />
+              <Box box_left="350px" box_top="250px" box_position="row" box_text="영월 한반도 습지" onClick={() => FirstcontentsEvent('월영한반도습지')} />
               <Box box_left="40px" box_top="450px" box_position="row-reverse" box_text="서천갯벌" onClick={() => FirstcontentsEvent('')} />
               <Box box_left="410px" box_top="710px" box_position="column" box_text="물장오리" onClick={() => FirstcontentsEvent('물장오리')} />
               <Box box_left="30px" box_top="700px" box_position="row" box_text="신안 장도 산지습지" onClick={() => FirstcontentsEvent('장도습지')} />
